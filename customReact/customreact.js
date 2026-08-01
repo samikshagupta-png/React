@@ -5,13 +5,13 @@ function customrender(reactelement,Container){
     //     domelement.setAttribute('target',reactelement.props.target)
     //     Container.appendChild(domelement)
     // }
- const domelement = document.createElement(reactelement.type)
- domelement.innerHTML = reactelement.children
- for (const prop in reactelement.props){
-    if (prop == 'children') continue ;
-    domelement.setAttribute(prop,reactelement.props[prop])
- }
- Container.appendChild(domelement)
+    const domelement = document.createElement(reactelement.type)
+    domelement.innerHTML = reactelement.children
+    for (const prop in reactelement.props){
+        if (prop === 'children') continue ;
+            domelement.setAttribute(prop,reactelement.props[prop])
+        }
+    Container.appendChild(domelement)
 }
 const reactelement = {
     type :'a',
@@ -21,7 +21,7 @@ const reactelement = {
     },
     children :'click me to visit google'
 
-}
+};
 
 const mainContainer=document.querySelector('#root')
 customrender(reactelement,mainContainer)
