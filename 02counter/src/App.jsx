@@ -5,10 +5,17 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  let counter =15
+  // let counter =15
+  const [counter,setCounter]=useState(15)
   const addvalue =() =>{
-    
-    counter =counter+1
+    console.log("clicked",counter);
+    // counter =counter+1
+    setCounter(counter+1)
+
+  }
+  const removeValue = () => {
+    console.log("clicked remove", counter)
+    setCounter(counter - 1)
   }
 
   return (
@@ -17,7 +24,7 @@ function App() {
      <h2>counter value:{counter}</h2>
      <button onClick={addvalue}>Add value</button>
      <br></br>
-     <button>remove value</button>
+     <button onClick={removeValue}>remove value</button>
     </>
   )
 }
