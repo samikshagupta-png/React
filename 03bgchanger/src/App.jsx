@@ -16,7 +16,7 @@ function App() {
             <button  onClick={()=>setColor("pink")} className="outline-none px-4  py-1" style={{backgroundColor:"pink"}}>pink</button>
             <button  onClick={()=>setColor("lightblue")} className="outline-none px-4  py-1" style={{backgroundColor:"lightblue"}}>blue</button>
             <button  onClick={()=>setColor("grey")}className="outline-none px-4  py-1" style={{backgroundColor:"grey"}}>grey</button>
-            <button onClick={()=>setColor("lightpink")} className="outline-none px-4  py-1" style={{backgroundColor:"lightpink"}}>lightpink</button>
+          
           </div>
           
         </div>
