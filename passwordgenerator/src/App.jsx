@@ -3,9 +3,9 @@ import './App.css'
 
 function App() {
   const [length, setlength] = useState(8)
-  const [numberAllowed,setNumberAllowed]=usestate(false);
-  const [charallowed,setcharallowed] = usestate(false)
-  const [password,setpassword]=usestate("")
+  const [numberAllowed,setNumberAllowed]=useState(false);
+  const [charallowed,setcharallowed] = useState(false)
+  const [password,setpassword]=useState("")
   const passwordgenerator = useCallback(()=>{
     let pass=""
     let str="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -22,7 +22,9 @@ function App() {
   return (
     <>
       <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700'>test</div>
+      
     </>
+
   )
 }
 
