@@ -1,0 +1,100 @@
+body{
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient( to left, #0F2027, #203A43, #2C5364)  ;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 40vh;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 1.6rem;
+}
+.textsection{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputsection{
+    display: flex;
+    font-size: 1.3rem;
+    gap:0.2em;
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.input{
+    border: none;
+    border-top-left-radius: 1.2rem;
+    background-color: gainsboro;
+    width: 55%;
+    height: 7vh;
+
+}
+.copybtn{
+    height: 7vh;
+    width: 11%;
+ background: linear-gradient(135deg, #4CAF50, #2E7D32); /* elegant green gradient */
+  color: #fff;
+  border: none;
+  padding: 0;
+  border-top-right-radius: 1.2rem;          /* smooth corners */
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* subtle depth */
+  transition: all 0.3s  
+
+}
+.copybtn:hover {
+  background: linear-gradient(135deg, #43A047, #1B5E20); /* darker hover */
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    body{
+        font-size: 1rem;
+    }
+  .section {
+    width: 90%;          
+    height: auto;        
+    border-radius: 1rem;
+    height: 20vh; 
+  }
+
+  .input {
+    width: 70%;         
+    height: 6vh;
+    font-size: 0.9rem;
+  }
+
+  .copybtn {
+    width: 25%;          /* button bigger for touch */
+    height: 6vh;
+    font-size: 0.9rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .inputsection {
+    
+    gap: 0.5em;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+  label {
+    font-size: 0.9rem;   /* smaller text for mobile */
+  }
+}
