@@ -14,7 +14,19 @@ body {
   align-items: center;
   color: #fff;
 }
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
 
+.actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
 /* Container styling */
 .container {
   background: #1c1f26;
@@ -34,10 +46,43 @@ body {
   text-align: center;
   margin-bottom: 25px;
   font-size: 28px;
+  
   background: linear-gradient(90deg, #00c6ff, #0072ff);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.actions button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+
+/* Swap button style */
+.actions button:first-child {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5); /* teal-blue gradient */
+}
+
+.actions button:first-child:hover {
+  background: linear-gradient(135deg, #5b86e5, #36d1dc);
+  transform: scale(1.05);
+}
+
+/* Convert button style */
+.actions button:last-child {
+  background: linear-gradient(135deg, #ff512f, #dd2476); /* red-pink gradient */
+}
+
+.actions button:last-child:hover {
+  background: linear-gradient(135deg, #dd2476, #ff512f);
+  transform: scale(1.05);
+}
+
 
 /* Form elements */
 form {
