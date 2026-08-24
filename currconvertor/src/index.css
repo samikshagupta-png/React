@@ -82,6 +82,24 @@ body {
   background: linear-gradient(135deg, #dd2476, #ff512f);
   transform: scale(1.05);
 }
+/* Input field styling */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+  outline: none;
+}
 
 
 /* Form elements */

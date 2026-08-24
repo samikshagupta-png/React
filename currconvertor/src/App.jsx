@@ -49,6 +49,7 @@ function App() {
 
       <div className="actions">
         <button onClick={swap}>Swap</button>
+        <button onClick={convert}>Convert</button>
         
       </div>
 
