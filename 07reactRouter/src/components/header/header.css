@@ -1,0 +1,126 @@
+/* Header wrapper */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Navigation bar */
+.nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.625rem 1rem; /* py-2.5 px-4 */
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px; /* max-w-screen-xl */
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 3rem; /* h-12 */
+  margin-right: 0.75rem; /* mr-3 */
+}
+
+/* Action buttons */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+
+.login-btn {
+  color: #1f2937; /* text-gray-800 */
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #f9fafb; /* hover:bg-gray-50 */
+}
+
+.start-btn {
+  color: #ffffff;
+  background-color: #c2410c; /* bg-orange-700 */
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.start-btn:hover {
+  background-color: #9a3412; /* hover:bg-orange-800 */
+}
+
+/* Menu */
+.nav-menu {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  order: 1;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.menu-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #f9fafb;
+  color: #c2410c; /* hover:text-orange-700 */
+}
+
+/* Responsive (lg breakpoint ~1024px) */
+@media (min-width: 1024px) {
+  .nav {
+    padding: 0.625rem 1.5rem; /* lg:px-6 */
+  }
+
+  .login-btn,
+  .start-btn {
+    padding: 0.625rem 1.25rem; /* lg:px-5 lg:py-2.5 */
+  }
+
+  .nav-menu {
+    display: flex;
+    width: auto;
+  }
+
+  .menu-list {
+    flex-direction: row;
+    margin-top: 0;
+    gap: 2rem; /* lg:space-x-8 */
+  }
+
+  .menu-item {
+    border: none;
+    padding: 0;
+  }
+}
