@@ -24,8 +24,18 @@ export default function Header() {
                     <div className="nav-menu" id="mobile-menu-2">
                         <ul className="menu-list">
                             <li>
-                                <NavLink className="menu-item" >
+                                <NavLink to="/" className="menu-item">
                                     Home
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/about" className="menu-item">
+                                    About us
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/contact" className="menu-item">
+                                    contact us
                                 </NavLink>
                             </li>
                         </ul>

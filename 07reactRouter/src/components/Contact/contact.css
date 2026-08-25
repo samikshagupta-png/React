@@ -1,0 +1,129 @@
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 700px;
+  background-color: #ffffff;
+  padding-top: 0;
+}
+
+@media (min-width: 640px) {
+  .contact {
+    align-items: center;
+    padding-top: 0;
+  }
+}
+
+.contact-container {
+  max-width: 72rem; /* max-w-6xl */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .contact-container {
+    padding: 0 2rem;
+  }
+}
+
+.contact-content {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-info {
+  background-color: #f3f4f6; /* gray-100 */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.contact-heading {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #1f2937; /* gray-800 */
+}
+
+@media (min-width: 640px) {
+  .contact-heading {
+    font-size: 2.25rem;
+  }
+}
+
+.contact-subheading {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #4b5563; /* gray-600 */
+  margin-top: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: #4b5563;
+  margin-top: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #6b7280; /* gray-500 */
+}
+
+.contact-text {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 10rem;
+}
+
+/* Form */
+.contact-form {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.form-input {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #9ca3af; /* gray-400 */
+  color: #1f2937; /* gray-800 */
+  font-weight: 600;
+}
+
+.form-input:focus {
+  border-color: #c2410c; /* orange-700 */
+  outline: none;
+}
+
+.form-btn {
+  width: 8rem;
+  background-color: #c2410c; /* orange-700 */
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+  background-color: #ea580c; /* orange-600 */
+}

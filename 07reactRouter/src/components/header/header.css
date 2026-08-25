@@ -66,16 +66,26 @@
 }
 
 .start-btn:hover {
-  background-color: #9a3412; /* hover:bg-orange-800 */
+  background-color: #9a3412; 
 }
 
 /* Menu */
 .nav-menu {
-  display: none;
+  display: flex;   
   justify-content: space-between;
   align-items: center;
   width: 100%;
   order: 1;
+}
+/* Show menu when toggled */
+.nav-menu.show {
+  display: flex;
+}
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .menu-list {
