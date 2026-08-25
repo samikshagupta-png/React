@@ -1,0 +1,146 @@
+.home {
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Aside section */
+.home-aside {
+  position: relative;
+  overflow: hidden;
+  color: #000000;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+  padding-top: 4rem;
+}
+
+@media (min-width: 640px) {
+  .home-aside {
+    margin: 0 4rem;
+    padding: 4rem 0;
+  }
+}
+
+.aside-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 5rem;
+}
+
+@media (min-width: 640px) {
+  .aside-content {
+    padding: 6rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aside-content {
+    padding: 6rem 2rem;
+  }
+}
+
+.aside-text {
+  max-width: 36rem;
+  margin-top: 20rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .aside-text {
+    margin-top: 0.25rem;
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
+.aside-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .aside-heading {
+    font-size: 3rem;
+  }
+}
+
+.aside-subheading {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .aside-subheading {
+    display: block;
+    font-size: 2.25rem;
+  }
+}
+
+/* Download button */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #c2410c; /* orange-700 */
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.download-btn:hover {
+  opacity: 0.75;
+}
+
+/* Aside image */
+.aside-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .aside-image {
+    margin: 5rem 0;
+    padding-top: 0.25rem;
+  }
+}
+
+.aside-image img {
+  width: 24rem; /* w-96 */
+}
+
+/* Center image below aside */
+.home-image {
+  display: grid;
+  place-items: center;
+  margin-top: 5rem;
+}
+
+.home-image img {
+  width: 12rem; /* w-48 */
+}
+
+@media (min-width: 640px) {
+  .home-image img {
+    width: 24rem; /* sm:w-96 */
+  }
+}
+
+/* Title */
+.home-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 2.5rem 0;
+}
+
+@media (min-width: 640px) {
+  .home-title {
+    font-size: 3rem;
+  }
+}
